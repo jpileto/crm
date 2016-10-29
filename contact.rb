@@ -44,7 +44,7 @@ end
   # 1. which of the contact's attributes you want to update
   # 2. the new value for that attribute
   # and then make the appropriate change to the contact
-  def update
+  def update(attr_to_change, new_value)
     if attr_to_change == "first_name"
       self.first_name = new_value
     elsif attr_to_change == "last_name"
